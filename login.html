@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Flower Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, rgba(230, 83, 108, 1) 0%, rgba(255, 153, 153, 1) 100%);
+            padding: 15px 7px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav .left {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-container h1 {
+            text-align: center;
+            color: rgb(230, 83, 108);
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            margin-left: -13px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(230, 83, 108);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-container button:hover {
+            background-color: rgb(200, 70, 90);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">Flower</div>
+        <div class="center">
+            <ul>
+                <li> <a href="index.html"> Home</a></li>
+                <!-- <li> <a href="contact.html"> Contact</a></li> -->
+            </ul>
+        </div>
+        <div class="right">
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="login.php" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <div class="footer">
+            <p>Don't have an account? <a href="signuup.html">Register here</a></p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/dc4701f61d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

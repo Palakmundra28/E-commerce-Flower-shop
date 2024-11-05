@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Flowers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #fef8f8;
+        }
+
+        header {
+            background: #ffd6d9;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a.active {
+            color: #ff6363;
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('flower-background.jpg') no-repeat center center/cover;
+            color: #333;
+        }
+
+        .contact h1 {
+            color: #ff6363;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background: #ff6363;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background: #ff4040;
+        }
+
+        .contact-info {
+            max-width: 300px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        .contact-info h2 {
+            font-size: 24px;
+            color: #ff6363;
+        }
+
+        footer {
+            background: #ffd6d9;
+            text-align: center;
+            padding: 15px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-form,
+            .contact-info {
+                width: 90%;
+                max-width: none;
+            }
+        }
+
+
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+
+        .contact-form:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+            margin: 15px 0 5px;
+            color: #555;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin-left: -13px;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #ff6363;
+            box-shadow: 0 0 5px rgba(255, 99, 99, 0.5);
+        }
+
+        .contact-form button {
+            background: #ff6363;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .contact-form button:hover {
+            background: #ff4040;
+            transform: scale(1.05);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .contact-form {
+            margin-left: 14vw;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 66px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <!-- <a href="products.html">Products</a> -->
+            <!-- <a href="#abouts">About Us</a> -->
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you! Feel free to reach out with any questions or feedback.</p>
+
+        <div class="contact-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h2>Our Office</h2>
+                <p><strong>Address:</strong> 123 Flower Avenue, Blossom City, FL 45678</p>
+                <p><strong>Email:</strong> support@estore.com</p>
+                <p><strong>Phone:</strong> +1 (234) 567-8901</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EStore. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

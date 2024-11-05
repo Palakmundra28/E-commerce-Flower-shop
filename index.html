@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        nav .center ul li a.active {
+            color: rgb(230, 83, 108);
+            font-weight: bold;
+            border-bottom: 2px solid rgb(228, 82, 209);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, rgba(230, 83, 108, 1) 0%, rgba(255, 153, 153, 1) 100%);
+            padding: 15px 7px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav .left {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav .center ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav .center ul li {
+            margin: 0 20px;
+        }
+
+        nav .center ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav .center ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        nav .right i {
+            font-size: 24px;
+            margin-left: 20px;
+            color: white;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        nav .right i:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav .center ul {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav .center ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">PetalBliss</div>
+        <div class="center">
+            <ul>
+                <li> <a href="index.html"> Home</a></li>
+                <li> <a href="#abouts"> About</a></li>
+                <li> <a href="#productss"> Product</a></li>
+                <li> <a href="#reviewss"> Review</a></li>
+                <li> <a href="contact.html"> Contact</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="lestcontent">
+            <h1>Fresh Flowers</h1>
+            <h2>"Fresh Blooms, Delivered with Love."</h2>
+            <p>"Discover the beauty of fresh, handpicked flowers at our online shop. Whether you're celebrating a special occasion or brightening someone's day, our exquisite bouquets are crafted with care and delivered straight to your doorstep. Shop now for fast, reliable delivery!"
+
+
+
+
+            </p>
+            <button>Shop Now</button>
+        </div>
+        <div class="rightcontent"><img src="1st image.png" alt=""></div>
+    </main>
+
+
+    <section id="abouts" class="firstsection">
+        <div class="top">
+            <h1><span style="font-weight: bold;  color: rgb(230, 83, 108);">About</span> Us</h1>
+        </div>
+        <div class="bottom">
+            <div class="bottonleft"><video muted autoplay src="flooowerrrr.mp4"></video>
+            </div>
+            <div class="bottomright">
+                <h1>Why Choose Us</h1>
+                <p>At "Petal Bliss" , we are passionate about bringing you the freshest, most beautiful blooms. Our handpicked flowers are crafted into stunning arrangements for any occasion, with fast, reliable delivery right to your door. We pride ourselves on exceptional customer service, quality, and attention to detail. Whether it's a birthday, anniversary, or just because, trust us to make every moment more special with flowers that speak from the heart.</p>
+
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="secondsection">
+        <div class="box box1"><i style="font-size: 40px; margin: 23px;" class="fa-solid fa-truck-fast"></i>
+            <span>
+                <h5>Free Shipping</h4>
+                    <p>on All Orders</p>
+            </span>
+        </div>
+        <div class="box box2"><i style="font-size: 40px; margin: 23px;" class="fa-solid fa-money-check-dollar"></i>
+            <span>
+                <h5>10 Days Return</h4>
+                    <p>Moneyback Gurantee</p>
+            </span>
+        </div>
+        <div class="box box3"><i style="font-size: 40px; margin: 23px;" class="fa-solid fa-gift"></i>
+            <span>
+                <h5>Offers & Gifts</h4>
+                    <p>on all Orders</p>
+            </span>
+        </div>
+        <div class="box box4"><i style="font-size: 40px; margin: 23px;" class="fa-regular fa-credit-card"></i>
+            <span>
+                <h5>Secure Payment</h4>
+                    <p>Protected by Razorpay</p>
+            </span>
+        </div>
+    </section>
+
+    <section id="productss" class="thirdsection">
+        <div class="top">
+            <h1>Latest <span style="font-weight: bold;  color: rgb(230, 83, 108);">Product</span></h1>
+        </div>
+        <div class="product-list">
+            <div class="product-item">
+                <img style="height: 300px; width: auto;" src="1.jpg" alt="Product 1">
+                <h5>Product 1</h5>
+                <p>500rs</p>
+            </div>
+            <div class="product-item">
+                <img style="height: 300px; width: auto;" src="2.jpg" alt="Product 2">
+                <h5>Product 2</h5>
+                <p>250rs</p>
+            </div>
+            <div class="product-item">
+                <img style="height: 300px; width: auto;" src="3.jpg" alt="Product 3">
+                <h5>Product 3</h5>
+                <p>700rs</p>
+            </div>
+            <div class="product-item">
+                <img style="height: 300px; width: auto;" src="4.jpg" alt="Product 4">
+                <h5>Product 3</h5>
+                <p>780rs</p>
+            </div>
+            <div class="product-item">
+                <img style="height: 300px; width: auto;" src="5.jpg" alt="Product 5">
+                <h5>Product 3</h5>
+                <p>680rs</p>
+            </div>
+            <div class="product-item">
+                <img style="height: 300px; width: auto;" src="6.jpg" alt="Product 6">
+                <h5>Product 3</h5>
+                <p>2000rs</p>
+            </div>
+            <div class="product-item">
+                <img style="height: 300px; width: auto;" src="7.jpg" alt="Product 7">
+                <h5>Product 3</h5>
+                <p>999rs</p>
+            </div>
+            <div class="product-item">
+                <img style="height: 300px; width: auto;" src="8.jpg" alt="Product 8">
+                <h5>Product 3</h5>
+                <p>1599rs</p>
+            </div>
+            <div class="product-item">
+                <img style="height: 300px; width: auto;" src="9.jpg" alt="Product 9">
+                <h5>Product 3</h5>
+                <p>2599rs</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="reviewss" class="Review">
+        <div class="top">
+            <h1>Customer's<span style="font-weight: bold; color: rgb(230, 83, 108);"> Reviews</span></h1>
+        </div>
+        <div class="review-list">
+            <div class="review-item">
+                <h5>Tanish jaiswal</h5>
+                <p>"Absolutely loved the flowers! They were fresh and beautiful."</p>
+                <p class="rating">Rating: ★★★★☆ </p>
+            </div>
+            <div class="review-item">
+                <h5>Ruhi Rout</h5>
+                <p>"Great service and quick delivery. Highly recommend!"</p>
+                <p class="rating">Rating: ★★★★½ </p>
+            </div>
+            <div class="review-item">
+                <h5>Ayaan singh</h5>
+                <p>"The bouquet was stunning and lasted a long time. Will order again!"</p>
+                <p class="rating">Rating: ★★★★★ </p>
+            </div>
+            <div class="review-item">
+                <h5>Saumya</h5>
+                <p>"Excellent quality and beautiful arrangements!"</p>
+                <p class="rating">Rating: ★★★★★ </p>
+            </div>
+            <div class="review-item">
+                <h5>Asad ullah</h5>
+                <p>"The delivery was on time, and the flowers were vibrant and fresh."</p>
+                <p class="rating">Rating: ★★★★☆ </p>
+            </div>
+            <div class="review-item">
+                <h5>Gaurav Tripathi</h5>
+                <p>"I was impressed by the variety of flowers available. Great experience!"</p>
+                <p class="rating">Rating: ★★★★½ </p>
+            </div>
+            <div class="review-item">
+                <h5>Revanth</h5>
+                <p>"Best flower shop in town! Will definitely be back for more."</p>
+                <p class="rating">Rating: ★★★★★</p>
+            </div>
+            <div class="review-item">
+                <h5>Rahul Rathore</h5>
+                <p>"The customer service was exceptional. Highly satisfied!"</p>
+                <p class="rating">Rating: ★★★★☆</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>About Us</h3>
+                <p>At "PetalBliss", we specialize in fresh, handpicked flowers for all occasions. Our expertly crafted bouquets are delivered with care, bringing beauty and joy to every doorstep, every time.</p>
+            </div>
+            <div class="footer-center">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#abouts">About</a></li>
+                    <li><a href="#productss">Products</a></li>
+                    <li><a href="#reviewss">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <p>Email: PetalBliss2024@gmail.com</p>
+                <p>Phone: +91-1234567890</p>
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PetalBliss. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/dc4701f61d.js" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
